@@ -28,10 +28,10 @@ Make sure that in your theme, in footer.php file wp_footer() function call exist
 = This plugin is not working at all =
 Make sure that in your theme in footer.php file wp_footer() function call exists.
 
-= Everything is correct but still I do not see IndicIME toolbar =
+= I do not see IndicIME toolbar =
 Your Web browser might have cached all your javascript. Make sure to purge cache by refreshing it. You may press ctrl+F5 to reload the page.
 
-= After typing when I save it, it shows me questions marks(?) instead of Indian language text =
+= It shows me questions marks(?) after saving post =
 This is not a plugin problem. Your database must have a Unicode(UTF-8) collation. If you have brand new blog, create a database with proper collation. If you have existing blog, try searching for a plugin which will convert your existing blog content into Unicode.
 
 == Screenshots ==
