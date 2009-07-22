@@ -2,9 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>{$lang_indicime_dlg_title}</title>
-	<script language="javascript" type="text/javascript" src="../../tiny_mce_popup.js"></script>
-	<script type="text/javascript" src="../../utils/mctabs.js"></script>
+	<script language="javascript">
+	var u = document.location.href;
+	var bu = unescape(u.indexOf("?bu") >= 0? u.substring(u.indexOf("?bu")+4):'');
+	bu = bu.indexOf("&") >=0? bu.substring(0,bu.indexOf("&")):bu;
+	document.write('<sc'+'ript language="javascript" type="text/javascript" src="' + bu + '\/tiny_mce_popup.js" ><\/script>');
+	document.write('<sc'+'ript language="javascript" type="text/javascript" src="' + bu + '\/utils/mctabs.js" ><\/script>');
+	</script>
 	<base target="_self" />
+	<style>
+	.panel_wrapper div.current {height:360px;}
+	</style>
 </head>
 <body style="display:none;" onLoad="javascript:mcTabs.displayTab('help_tab', 'help_panel');">
 	<div class="tabs">
@@ -22,13 +30,13 @@
 				</tr>
 				<tr>
 					<td>
-						<img id="kb" src="img/englishcharmap.gif" />
+						<div id="help_img">{$lang_indicime_please_wait}</div>
 					</td>
 				</tr>
 			</table>
 			<script language="javascript">
-				var kb = document.getElementById('kb');
-				kb.src = "img/" + tinyMCEPopup.getWindowArg('lang') + "charmap.gif";
+				var kb = document.getElementById('help_img');
+				kb.innerHTML = '<img id="kb" src="' +  "img/" + tinyMCEPopup.getWindowArg('lang') + "charmap.gif" + '" />';
 			</script>
 		</div>
 
