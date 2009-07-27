@@ -34,7 +34,7 @@ if (!class_exists('IndicIME'))
 			else
 				$this->wpversion = 2.0;
 			
-			$this->baseURL = get_option('siteurl')."/" . PLUGINDIR . "/indicime/";
+			$this->baseURL = get_option('siteurl')."/" . PLUGINDIR . "/" . str_replace(basename( __FILE__),"",plugin_basename(__FILE__)) .  "indicime/";
 			add_action('init', array(&$this,'load_plugin'));
 			add_action('wp_footer', array(&$this,'add_indicime'));
 			add_action('admin_footer', array(&$this,'add_indicime'));
@@ -46,7 +46,7 @@ if (!class_exists('IndicIME'))
     	{
     		$lst = $this->settings['scriptlist'];
     		if($lst != 'defaultlist')
-    			$lst .= ";English (F12);English";
+    			$lst .= ";English (F12):English";
     		if($this->wpversion < 2.5)
 			{
     			echo "initArray['indicime_scripts'] = '$lst';";
@@ -98,10 +98,10 @@ if (!class_exists('IndicIME'))
 			return $buttons;
 		}
 		function admin_menu() {
-			add_options_page("IndicIME Settings", "Indic IME", 'manage_options', basename(__FILE__), array(&$this, 'optionspage'));
+			add_options_page("IndicIME Settings", "Indic IME", 'manage_options', plugin_basename(__FILE__), array(&$this, 'optionspage'));
 		}
 		function optionspage() {
-		if ( $_POST && basename(__FILE__) == $_GET['page'] ) {
+		if ( $_POST && plugin_basename(__FILE__) == $_GET['page'] ) {
 			// Saving data
 			$s = addslashes(htmlspecialchars($_POST['scriptlist']));
 			$l = addslashes(htmlspecialchars($_POST['promotion']));
