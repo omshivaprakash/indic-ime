@@ -33,7 +33,7 @@ try{
 	var old = (id == '_globalIndicIME')?document.getElementById('indicscript').value:pphText.getScript('_globalIndicIME');
 	var indic = (old == "english"?script:old);
 	pphText.setGlobalScript(script);
-	document.getElementById('indiccm').src = indicime_bu + "img/" + script + 'charmap.gif';
+	document.getElementById('indiccm').src = indicime_bu + "img/" + script + 'charmap.png';
 	document.getElementById('indicscript').value = script.toLowerCase();
 	d = new Date();
 	d.setMonth(d.getMonth()+1);
@@ -88,8 +88,8 @@ try{
 		"<option value='gujarati'>Gujarati</option><option value='gurmukhi'>Gurmukhi</option><option value='kannada'>Kannada</option>" +
 		"<option value='malayalam'>Malayalam</option><option value='oriya'>Oriya</option><option value='tamil'>Tamil</option><option value='telugu'>Telugu</option>";
 	}	
-	content +=	"<option value='english' selected>English (F12)</option></select><img src='" + indicime_bu + "img/help.gif' id='indichp' onclick=\"indictl('indichp','indiccmc');return false;\" style='cursor: pointer; cursor: hand;' title='Toggle help description'><div id='indiccmc' style='display:none;width:540px;text-align:left;'>Select Indian script from the list and type with 'The way you speak, the way you type' rule on this page. Refer to following image for details. Press F12 to toggle between Indic script and English.<br><img src='" + indicime_bu + "img/englishcharmap.gif' alt='indic script char map' id='indiccm'></div>"+
-		(indicime_lnk != 'off'?"<br \/>Powered By <a href=\"http:\/\/www.vishalon.net\/IndicResources\/IndicIME\/tabid\/244\/Default.aspx\" target='_blank'>Indic IME<\/a>":'') +
+	content +=	"<option value='english' selected>English (F12)</option></select><img src='" + indicime_bu + "img/help.gif' id='indichp' onclick=\"indictl('indichp','indiccmc');return false;\" style='cursor: pointer; cursor: hand;' title='Toggle help description'><div id='indiccmc' style='display:none;width:540px;text-align:left;'>Select Indian script from the list and type with 'The way you speak, the way you type' rule on this page. Refer to following image for details. Press F12 to toggle between Indic script and English.<br><img src='" + indicime_bu + "img/englishcharmap.png' alt='indic script char map' id='indiccm'></div>"+
+		(indicime_lnk != 'off'?"<br \/>Powered By <a href=\"http:\/\/www.vishalon.net\/IndicResources\/IndicIME.aspx\" target='_blank'>Indic IME<\/a>":'') +
 		"</div><div style='clear:both'></div>";
 	iil.innerHTML = content;
 	return (!val?'':val[1]);

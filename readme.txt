@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: vmonpara
 Donate link: http://www.vishalon.net
-Tags: Indic IME, Assamese, Bengali, Devanagari, Gujarati, Hindi, Marathi, Gurmukhi, Kannada, Malayalam, Manipuri, Nepali, Oriya, Punjabi, Sanskrit, Tamil, Telugu, transliteration
+Tags: Indic IME, Assamese, Bengali, Devanagari, Gujarati, Hindi, Marathi, Gurmukhi, Kannada, Malayalam, Manipuri, Nepali, Oriya, Punjabi, Sanskrit, Tamil, Telugu, transliteration, type, Indian, language, script
 Requires at least: 2.0.2
-Tested up to: 2.8
-Stable tag: 2.5
+Tested up to: 2.8.4
+Stable tag: 2.5.1
 
 Easily write in 9 Indian scripts with easy-to-use transliterate keyboard. Visitor/blog owner does not need to download any special software.
 
@@ -27,13 +27,10 @@ Make sure that in your theme, in footer.php file wp_footer() function call exist
 
 = This plugin is not working at all =
 Make sure that in your theme in footer.php file wp_footer() function call exists.
-
 = Everything is correct but still I do not see IndicIME toolbar =
 Your Web browser might have cached all your javascript. Make sure to purge cache by refreshing it. You may press ctrl+F5 to reload the page.
-
 = After typing when I save it, it shows me questions marks(?) instead of Indian language text =
 This is not a plugin problem. Your database must have a Unicode(UTF-8) collation. If you have brand new blog, create a database with proper collation. If you have existing blog, try searching for a plugin which will convert your existing blog content into Unicode.
-
 == Screenshots ==
 
 1. You will see a dropdown list with language of your choice. Choose one and start typing. For help, click on the button next to it.

@@ -1,8 +1,8 @@
 <?php
 /*
  * Plugin Name: Indic IME
- * Plugin URI: http://www.vishalon.net/IndicResources/IndicIME/tabid/244/Default.aspx
- * Version: 2.5
+ * Plugin URI: http://www.vishalon.net/IndicResources/IndicIME.aspx
+ * Version: 2.5.1
  * Description: Now easily type in your favourite Indian language with "The way you speak, the way you type" rule with this plugin. Supported Scripts: Bengali(Assamese, Bengali, Manipuri), Devanagari(Hindi, Marathi, Nepali, Sanskrit), Gujarati, Gurmukhi(Punjabi), Kannada, Malaylam, Oriya, Tamil, Telugu
  * Author: Vishal Monpara
  * Author URI: http://www.vishalon.net
@@ -77,7 +77,7 @@ if (!class_exists('IndicIME'))
 		{
 			?>
 			<div id="indicimelayer">
-				Powered By <a href="http://www.vishalon.net/IndicResources/IndicIME/tabid/244/Default.aspx" target="_blank">Indic IME</a>
+				Powered By <a href="http://www.vishalon.net/IndicResources/IndicIME.aspx" target="_blank">Indic IME</a>
 			</div>
 			<script language="JavaScript" type="text/javascript">
 			var pphText, indicime_bu = "<?php echo $this->baseURL, '", indicime_script="', $this->settings['scriptlist'],'", indicime_lnk = "', $this->settings['link'], '"' ;?>; 
