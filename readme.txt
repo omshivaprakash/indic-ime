@@ -3,7 +3,7 @@ Contributors: vmonpara
 Donate link: http://www.vishalon.net
 Tags: Indic IME, Assamese, Bengali, Devanagari, Gujarati, Hindi, Marathi, Gurmukhi, Kannada, Malayalam, Manipuri, Nepali, Oriya, Punjabi, Sanskrit, Tamil, Telugu, transliteration, type, Indian, language, script
 Requires at least: 2.0.2
-Tested up to: 2.8.4
+Tested up to: 3.1
 Stable tag: 2.5.1
 
 Easily write in 9 Indian scripts with easy-to-use transliterate keyboard. Visitor/blog owner does not need to download any special software.
