@@ -85,7 +85,7 @@ if (!class_exists('IndicIME'))
 			</script>
 			<?php
 		}
-		function &add_button(&$buttons) {
+		function &add_button($buttons) {
 			$wp_sc= array_search('spellchecker', $buttons);
 			if ($wp_sc !== false) {
 				array_splice($buttons, $wp_sc +1 , 0, array('indicime','indicimehelp'));
